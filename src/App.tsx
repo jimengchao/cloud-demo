@@ -9,7 +9,8 @@ export default function App() :JSX.Element {
   const [ data, setData ] = useState<string>('');
 
   function handleClick():void {
-    fetch(`/api${window.location.search}`).then(res => res.text()).then(res => setData(res));
+    let url: string = process.env.NODE_ENV === 'production' ? 'https://cloudflare-demo.mengchao10271254.workers.dev' : '/api'
+    fetch(`${url}${window.location.search}`).then(res => res.text()).then(res => setData(res));
     console.log('You clicked me');
   }
 
