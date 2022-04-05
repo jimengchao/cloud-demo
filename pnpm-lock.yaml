@@ -59,6 +59,9 @@ specifiers:
   webpack: ^5.64.4
   webpack-dev-server: ^4.6.0
   webpack-manifest-plugin: ^4.0.2
+  workbox-precaching: ^6.5.2
+  workbox-routing: ^6.5.2
+  workbox-strategies: ^6.5.2
   workbox-webpack-plugin: ^6.4.1
 
 dependencies:
@@ -119,6 +122,9 @@ dependencies:
   webpack: 5.71.0
   webpack-dev-server: 4.7.4_webpack@5.71.0
   webpack-manifest-plugin: 4.1.1_webpack@5.71.0
+  workbox-precaching: 6.5.2
+  workbox-routing: 6.5.2
+  workbox-strategies: 6.5.2
   workbox-webpack-plugin: 6.5.2_webpack@5.71.0
 
 devDependencies:

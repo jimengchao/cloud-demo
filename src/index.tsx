@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import * as serviceWorkers from './serviceWorkers'
+
 createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <App />
@@ -14,3 +16,6 @@ createRoot(document.getElementById('root') as HTMLElement).render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+serviceWorkers.register();
